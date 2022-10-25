@@ -15,6 +15,7 @@
 
   body {
     background-color:beige;/* set the background color here */
+    background-image: url("sand.jpg");
     color: black;/* set the text color to black here */
     font-family: Arial, Helvetica, sans-serif;/* set the font here */
     text-align: center; /* set the text alignment here */
@@ -31,9 +32,17 @@
    }
 
   h2 {
-    color: #075AAB;
-    margin-bottom: 2.5rem; set the text color of to #075AAB here */
+    color: Orange;
+    centre:
+    margin-bottom: 2.0rem; set the text color of to #075AAB here */
     margin-top: 2.5rem;/* set both the bottom margin and top margin to 2.5rem here */
+   }
+
+   .surroundborder {
+     background-color: : #80471c
+     display: flex;
+     padding: 1.5rem;
+     border: 0.5rem solid #5e2c04
    }
 
   h3 {
@@ -50,14 +59,81 @@
     margin-top: 0.5rem;
   }
 
+  h6{
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+
   hr {
     margin-bottom: 3rem;
     margin-top: 3rem;
   }
 
+
+
   /* this controls how the bullet points in the resume page looks */
-  ul {
-    display: table;
+  ul li{
+    display: inline;
+    padding: 0.6rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    border: 0.5rem solid #80471C;
+    background-color: #DED1B4
     margin: 0 auto;
     text-align: left;
   }
+
+
+**
+  .tabs {
+    border:1px solid #ccccccc;
+    display: flex;
+  }
+
+  .tabs__sidebar{
+    width:100%;
+    display: inline;
+    flex-shrink:0;
+    background: #80471C;
+  }
+
+  .tabs__button {
+    display:block;
+    padding: 10px;
+    background: #eeeeee;
+    border: orange;
+    display:inline;
+    width: 40%
+    outline: none;
+    cursor: pointer;
+  }
+
+.tabs__button:active{
+  background: #dddddd;
+}
+
+.tabs_button:not(:last-of-type){
+  border-bottom: 1px solid #cccccc;
+}
+
+.tabs__button--active {
+  font-weight: bold;
+  border-right: 2px solid #009879;
+  background: #dddddd;
+}
+.tabs__content {
+  padding: 15px;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.tabs__content--active {
+  display:block;
+}
+.tabs__content > :first-child {
+  margin-top: 0;
+
+}
+**
