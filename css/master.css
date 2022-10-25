@@ -87,7 +87,7 @@
 
 
   .toptab{
-    display: inline;
+    display: inline-block;
     padding: 0.6rem;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
