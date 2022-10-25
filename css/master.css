@@ -97,7 +97,11 @@
     text-align: left;
     background-color: grey;
     color: white;
+    word-spacing: 2rem;
   }
+
+
+
 
   .toptab a:hover {
   color:black;
