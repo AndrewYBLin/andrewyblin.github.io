@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 
-<div class="toptab">
-  
-    <a href="index.html">Home</a>
-    <a href="Portfolio.html">Portfolio</a>
-    <a href="CONTACT.html">Contact</a>
+<div class="tabs">
+  <ul class="tab-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="active"><a href="Portfolio.html">Portfolio and Projects</a></li>
+    <li><a href="CONTACT.html">Contact</a></li>
 
-  </toptab>
+  </ul>
 </div>
    <header>
     <title>Contact me!</title>
@@ -20,7 +20,7 @@
    </header>
 
 
-<form id="contact-form" method="post" action="https://formspree.io/f/mnqrgdaw" onsubmit="return validate();">
+<form id="contact-form" method="post" action="send-email.php" onsubmit="return validate();">
    <input name="name" type="text"  placeholder="Your Name" required>
    <input name="email" type="text"  placeholder="Your Email" required="">
    <input name="subject" type="text"  placeholder="Subject" required="">
