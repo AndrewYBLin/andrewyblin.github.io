@@ -86,27 +86,6 @@
   }
 
 
-  .toptab{
-    display: inline-block;
-    padding: 0.6rem;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    border: 0.5rem solid #80471C;
-    background-color: #DED1B4
-    margin: 0 auto;
-    text-align: left;
-    background-color: D3D3D3;
-    color: white;
-  }
-
-
-
-
-  .toptab a:hover {
-  color:black;
-  background-color:white;
-}
-
 **
   .tabs {
     border:1px solid #ccccccc;
