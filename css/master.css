@@ -33,7 +33,7 @@
 
   h2 {
     color: Orange;
-    centre:
+    text-align: center;
     margin-bottom: 2.0rem; set the text color of to #075AAB here */
     margin-top: 2.5rem;/* set both the bottom margin and top margin to 2.5rem here */
    }
@@ -53,6 +53,7 @@
   h4 {
     margin-bottom: 1rem;
     margin-top: 0.5rem;
+    text-align:center;
   }
 
   h5 {
@@ -71,7 +72,46 @@
     margin-top: 3rem;
   }
 
+ img {
+   height: 10%;
+   vertical-align: middle;
+ }
 
+ form{
+   background:#E5E7E9;
+   display:flex;
+   flex-direction: column;
+   width:90%;
+   align-items: center;
+   align-self: center;
+   max-width: 70%;
+   margin: auto;
+ }
+
+.container{
+  padding: 5%;
+}
+
+.nav{
+  background-color: #EEE1c6;
+  text-align:center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li{
+  display: inline-block;
+  text-align:center;
+  font-size: 25%%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #FFF9D4;
+}
+
+.nav li a:hover{
+  color:black;
+  background-color:brown;
+}
 
   /* this controls how the bullet points in the resume page looks */
   ul li{
@@ -82,9 +122,32 @@
     border: 0.5rem solid #80471C;
     background-color: #DED1B4
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
   }
 
+
+  .proftab{
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    padding: 0.6rem;
+    background-color:#E5E8E8;
+    border: 0.5rem solid #80471C;
+  }
+
+  .toptab{
+    text-align: center;
+    display: inline-block;
+    padding: 0.6rem;
+
+    border: 0.5rem solid #80471C;
+
+    background-color: #DED1B4
+    margin: 0 auto;
+    text-align: left;
+    background-color: #E5E8E8;
+
+  }
 
 **
   .tabs {
