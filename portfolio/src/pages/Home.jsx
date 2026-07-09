@@ -111,6 +111,16 @@ export default function Home() {
             </ul>
           </div>
         </div>
+
+        <div style={{ marginTop: "3rem", textAlign: "center" }}>
+          <p style={{ color: "var(--muted-foreground)", fontSize: "0.95rem" }}>
+            Want to see where I started? Check out my{" "}
+            <a href="/v1/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent-blue)", fontWeight: "500", textDecoration: "underline" }}>
+              original website from 4 years ago
+            </a>.
+          </p>
+        </div>      
+
       </section>
 
       <section className="action-section">
