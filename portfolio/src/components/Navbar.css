@@ -1,0 +1,117 @@
+:root {
+  --primary: #0070f3;
+  --foreground: #111111;
+  --muted-foreground: #666666;
+  --border: rgba(0, 0, 0, 0.08);
+  --navbar-bg: rgba(255, 255, 255, 0.75);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: var(--navbar-bg);
+  /* Glassmorphism effect blur */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--foreground);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Base style for routing links */
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+/* Hover state interaction */
+.nav-links a:hover {
+  color: var(--foreground);
+}
+
+/* Active page accent tracking underline */
+.nav-links a.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Responsive adjustments for mobile viewports */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0 1.25rem;
+  }
+  
+  .nav-links {
+    gap: 1.25rem;
+  }
+}
+
+.navbar {
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  color: var(--primary);
+}
+
+.nav-links a {
+  color: var(--muted-foreground);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-dark);
+}
+
+.nav-links a::after {
+  background-color: var(--primary);
+}

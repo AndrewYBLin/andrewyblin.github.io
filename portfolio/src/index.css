@@ -1,0 +1,35 @@
+:root {
+  /* Legacy Earth-Toned Palette Tokens */
+  --bg-main: #fdfaf2;               /* Cleaned up beige background */
+  --bg-card: #f9f3e3;               /* Unified sand/cream card background */
+  --bg-tag: #eef2f3;                /* Clean light slate gray for tech tags */
+  
+  --primary: #80471c;               /* Core wood tone */
+  --primary-dark: #5e2c04;          /* Darker timber accent border */
+  --accent-blue: #075aab;           /* Cobalt blue highlight link color */
+  --accent-orange: #ff9800;         /* Warm orange highlight token */
+  
+  --foreground: #1a1a1a;            /* High-contrast off-black for text */
+  --muted-foreground: #6b5a4b;      /* Earthy muted brown-gray for subtext */
+  --navbar-bg: rgba(253, 250, 242, 0.8);
+  --border: rgba(128, 71, 28, 0.15); /* Soft structural divider lines */
+}
+
+/* Global resets to apply the palette across the entire DOM tree */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding-top: 64px; /* Layout offset so content never hides behind the fixed navbar */
+}
